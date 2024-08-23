@@ -1,0 +1,32 @@
+/* popup.css */
+body {
+  width: 300px;
+  height: auto; /* Adjust height to fit content */
+  max-height: 400px; /* Optional: prevent popup from getting too tall */
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow-y: auto; /* Add scroll if content overflows */
+}
+
+.theme-selector label {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center align text and radio button */
+  margin-bottom: 10px;
+  font-size: 14px; /* Adjust font size */
+}
+
+.theme-selector input[type="radio"] {
+  margin-right: 10px; /* Space between radio and text */
+  width: 16px; /* Adjust radio button size */
+  height: 16px;
+}
+
+.theme-selector input[type="radio"] + span {
+  font-size: 14px; /* Match font size with label for consistency */
+}
+
+.theme-selector label:hover {
+  background-color: #f0f0f0; /* Light background on hover */
+  cursor: pointer; /* Indicate clickability */
+}
