@@ -21,7 +21,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://helpdesk.osufpp.org/*", "*://support.osufpp.org/*"],
+      "matches": ["*://osufpp.org/*", "*://osufpp.org/*"],
       "js": ["content.js"]
     }
   ],
