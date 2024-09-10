@@ -28,12 +28,12 @@ html, body {
   /* background: #000;  /* dark mode */
  
   
-   margin 0px;
+   margin: 0px;
    font-size: 14px;
 }
 
 #header {
-    height 100px;
+    height: 100px;
     border: 1px solid #000000;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
@@ -526,9 +526,6 @@ background-color:#b12124;
     color: #b12124;
 }
 
-.filedrop .dropzone {
-    color: #313131;
-}
 
 .ui-widget-header {
     border: 1px solid #000000;
@@ -727,6 +724,29 @@ table.list thead th {
     border-left: 5px solid #7d7d7d;
     color: #333;
 }
+
+/* Scrollbar Track */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+    border: 2px solid #f1f1f1; /* Adjusted padding */
+}
+
+/* Scrollbar Handle on Hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
         `;
       } else if (theme === 'osu-theme') {
         style.textContent = `
@@ -738,12 +758,12 @@ html, body {
   /* background: #000;  /* dark mode */
  
   
-   margin 0px;
+   margin: 0px;
    font-size: 14px;
 }
 
 #header {
-    height 100px;
+    height: 100px;
     border: 1px solid #000000;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
@@ -1236,10 +1256,6 @@ background-color:#FF7300;
     color: #FF7300;
 }
 
-.filedrop .dropzone {
-    color: #313131;
-}
-
 .ui-widget-header {
     border: 1px solid #000000;
     color: #000;
@@ -1440,6 +1456,29 @@ table.list thead th {
     border-left: 5px solid #7d7d7d;
     color: #333;
 }
+
+/* Scrollbar Track */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+    border: 2px solid #f1f1f1; /* Adjusted padding */
+}
+
+/* Scrollbar Handle on Hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
         `;
 
       } else if (theme === 'midnight-theme') {
@@ -1452,12 +1491,12 @@ html, body {
   /* background: #b12124;  /* ifsta red*/
  
   
-   margin 0px;
+   margin: 0px;
    font-size: 14px;
 }
 
 #header {
-    height 100px;
+    height: 100px;
     border: 1px solid #000000;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
@@ -1947,9 +1986,6 @@ background-color:#b12124;
     color: #b12124;
 }
 
-.filedrop .dropzone {
-    color: #313131;
-}
 
 .ui-widget-header {
     border: 1px solid #000000;
@@ -2150,6 +2186,29 @@ table.list thead th {
     margin: 0 0 20px;
     border-left: 5px solid #7d7d7d;
     color: #333;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+    border: 2px solid #f1f1f1; /* Adjusted padding */
+}
+
+/* Scrollbar Handle on Hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
 }
         `;
 
@@ -2177,12 +2236,12 @@ html, body {
   /* background: #000;  /* dark mode */
  
   
-   margin 0px;
+   margin: 0px;
    font-size: 14px;
 }
 
 #header {
-    height 100px;
+    height: 100px;
     border: 1px solid #000000;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
@@ -2675,10 +2734,6 @@ background-color:#b12124;
     color: #b12124;
 }
 
-.filedrop .dropzone {
-    color: #313131;
-}
-
 .ui-widget-header {
     border: 1px solid #000000;
     color: #000;
@@ -2876,6 +2931,29 @@ table.list thead th {
     border-left: 5px solid #7d7d7d;
     color: #333;
 }
+
+/* Scrollbar Track */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+    border: 2px solid #f1f1f1; /* Adjusted padding */
+}
+
+/* Scrollbar Handle on Hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
       `;
     } else if (theme === 'osu-theme') {
       style.textContent = `
@@ -2887,12 +2965,12 @@ html, body {
   /* background: #000;  /* dark mode */
  
   
-   margin 0px;
+   margin: 0px;
    font-size: 14px;
 }
 
 #header {
-    height 100px;
+    height: 100px;
     border: 1px solid #000000;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
@@ -3385,9 +3463,6 @@ background-color:#FF7300;
     color: #FF7300;
 }
 
-.filedrop .dropzone {
-    color: #313131;
-}
 
 .ui-widget-header {
     border: 1px solid #000000;
@@ -3589,6 +3664,29 @@ table.list thead th {
     border-left: 5px solid #7d7d7d;
     color: #333;
 }
+
+/* Scrollbar Track */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+    border: 2px solid #f1f1f1; /* Adjusted padding */
+}
+
+/* Scrollbar Handle on Hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
       `;
 
       } else if (theme === 'midnight-theme') {
@@ -3601,12 +3699,12 @@ html, body {
   /* background: #b12124;  /* ifsta red*/
  
   
-   margin 0px;
+   margin: 0px;
    font-size: 14px;
 }
 
 #header {
-    height 100px;
+    height: 100px;
     border: 1px solid #000000;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
@@ -4096,9 +4194,6 @@ background-color:#b12124;
     color: #b12124;
 }
 
-.filedrop .dropzone {
-    color: #313131;
-}
 
 .ui-widget-header {
     border: 1px solid #000000;
@@ -4299,6 +4394,29 @@ table.list thead th {
     margin: 0 0 20px;
     border-left: 5px solid #7d7d7d;
     color: #333;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+    border: 2px solid #f1f1f1; /* Adjusted padding */
+}
+
+/* Scrollbar Handle on Hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
 }
         `;
 
