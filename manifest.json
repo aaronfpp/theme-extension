@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "OSTicket Themer",
-  "version": "10.0",
+  "version": "12.0",
   "description": "A simple tool to change the osticket theme.",
   "permissions": [
     "storage",
@@ -21,7 +21,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://osufpp.org/*"],
+      "matches": ["*://*.osufpp.org/*"],
       "js": ["content.js"]
     }
   ],
