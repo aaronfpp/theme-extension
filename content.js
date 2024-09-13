@@ -725,27 +725,38 @@ table.list thead th {
     color: #333;
 }
 
-/* Scrollbar Track */
+.thread-entry.avatar.note .header:after {
+    border-right-color: #777;
+}
+
+.thread-entry.avatar.response .header:after, .thread-entry.avatar.note .header:after {
+    border-right: 7px solid #b12124;
+}
+
+.thread-entry.avatar.message .header:after {
+    border-left: 7px solid #ff0000;
+}
+
+/* Scrollbar Track (applies to both vertical and horizontal) */
 ::-webkit-scrollbar {
     width: 10px;
+    height: 10px;
 }
 
-/* Scrollbar Handle */
-::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 6px;
-    border: 2px solid #f1f1f1; /* Adjusted padding */
-}
-
-/* Scrollbar Handle on Hover */
-::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
-}
-
-/* Scrollbar Track */
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
     border-radius: 10px;
+}
+
+/* Scrollbar Handle (applies to both vertical and horizontal) */
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+    border: 2px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
 }
         `;
       } else if (theme === 'osu-theme') {
@@ -1457,27 +1468,37 @@ table.list thead th {
     color: #333;
 }
 
-/* Scrollbar Track */
+.thread-entry.avatar.note .header:after {
+    border-right-color: #777;
+}
+
+.thread-entry.avatar.response .header:after, .thread-entry.avatar.note .header:after {
+    border-right: 7px solid #b12124;
+}
+
+.thread-entry.avatar.message .header:after {
+    border-left: 7px solid #ff0000;
+}
+/* Scrollbar Track (applies to both vertical and horizontal) */
 ::-webkit-scrollbar {
     width: 10px;
+    height: 10px;
 }
 
-/* Scrollbar Handle */
-::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 6px;
-    border: 2px solid #f1f1f1; /* Adjusted padding */
-}
-
-/* Scrollbar Handle on Hover */
-::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
-}
-
-/* Scrollbar Track */
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
     border-radius: 10px;
+}
+
+/* Scrollbar Handle (applies to both vertical and horizontal) */
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+    border: 2px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
 }
         `;
 
@@ -2106,7 +2127,7 @@ table.list {
 }
 
 .thread-entry.note .header {
-    background: #b777777;
+    background: #777777;
 }
 
 .label-bare {
@@ -2188,27 +2209,38 @@ table.list thead th {
     color: #333;
 }
 
-/* Scrollbar Track */
+.thread-entry.avatar.note .header:after {
+    border-right-color: #777;
+}
+
+.thread-entry.avatar.response .header:after, .thread-entry.avatar.note .header:after {
+    border-right: 7px solid #b12124;
+}
+
+.thread-entry.avatar.message .header:after {
+    border-left: 7px solid #ff0000;
+}
+
+/* Scrollbar Track (applies to both vertical and horizontal) */
 ::-webkit-scrollbar {
     width: 10px;
+    height: 10px;
 }
 
-/* Scrollbar Handle */
-::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 6px;
-    border: 2px solid #f1f1f1; /* Adjusted padding */
-}
-
-/* Scrollbar Handle on Hover */
-::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
-}
-
-/* Scrollbar Track */
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
     border-radius: 10px;
+}
+
+/* Scrollbar Handle (applies to both vertical and horizontal) */
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+    border: 2px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
 }
         `;
 
@@ -2932,27 +2964,38 @@ table.list thead th {
     color: #333;
 }
 
-/* Scrollbar Track */
+.thread-entry.avatar.note .header:after {
+    border-right-color: #777;
+}
+
+.thread-entry.avatar.response .header:after, .thread-entry.avatar.note .header:after {
+    border-right: 7px solid #b12124;
+}
+
+.thread-entry.avatar.message .header:after {
+    border-left: 7px solid #ff0000;
+}
+
+/* Scrollbar Track (applies to both vertical and horizontal) */
 ::-webkit-scrollbar {
     width: 10px;
+    height: 10px;
 }
 
-/* Scrollbar Handle */
-::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 6px;
-    border: 2px solid #f1f1f1; /* Adjusted padding */
-}
-
-/* Scrollbar Handle on Hover */
-::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
-}
-
-/* Scrollbar Track */
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
     border-radius: 10px;
+}
+
+/* Scrollbar Handle (applies to both vertical and horizontal) */
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+    border: 2px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
 }
       `;
     } else if (theme === 'osu-theme') {
@@ -3665,27 +3708,38 @@ table.list thead th {
     color: #333;
 }
 
-/* Scrollbar Track */
+.thread-entry.avatar.note .header:after {
+    border-right-color: #777;
+}
+
+.thread-entry.avatar.response .header:after, .thread-entry.avatar.note .header:after {
+    border-right: 7px solid #b12124;
+}
+
+.thread-entry.avatar.message .header:after {
+    border-left: 7px solid #ff0000;
+}
+
+/* Scrollbar Track (applies to both vertical and horizontal) */
 ::-webkit-scrollbar {
     width: 10px;
+    height: 10px;
 }
 
-/* Scrollbar Handle */
-::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 6px;
-    border: 2px solid #f1f1f1; /* Adjusted padding */
-}
-
-/* Scrollbar Handle on Hover */
-::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
-}
-
-/* Scrollbar Track */
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
     border-radius: 10px;
+}
+
+/* Scrollbar Handle (applies to both vertical and horizontal) */
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+    border: 2px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
 }
       `;
 
@@ -4314,7 +4368,7 @@ table.list {
 }
 
 .thread-entry.note .header {
-    background: #b777777;
+    background: #777777;
 }
 
 .label-bare {
@@ -4396,27 +4450,38 @@ table.list thead th {
     color: #333;
 }
 
-/* Scrollbar Track */
+.thread-entry.avatar.note .header:after {
+    border-right-color: #777;
+}
+
+.thread-entry.avatar.response .header:after, .thread-entry.avatar.note .header:after {
+    border-right: 7px solid #b12124;
+}
+
+.thread-entry.avatar.message .header:after {
+    border-left: 7px solid #ff0000;
+}
+
+/* Scrollbar Track (applies to both vertical and horizontal) */
 ::-webkit-scrollbar {
     width: 10px;
+    height: 10px;
 }
 
-/* Scrollbar Handle */
-::-webkit-scrollbar-thumb {
-    background-color: #888;
-    border-radius: 6px;
-    border: 2px solid #f1f1f1; /* Adjusted padding */
-}
-
-/* Scrollbar Handle on Hover */
-::-webkit-scrollbar-thumb:hover {
-    background-color: #555;
-}
-
-/* Scrollbar Track */
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
     border-radius: 10px;
+}
+
+/* Scrollbar Handle (applies to both vertical and horizontal) */
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+    border: 2px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
 }
         `;
 
