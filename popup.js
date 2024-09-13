@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll('input[name="theme"]').forEach(radio => radio.checked = false);
     } else {
       document.getElementById(theme).checked = true;
+      updateBackgroundColor(theme); // Update background color on load
     }
   });
 });
@@ -16,6 +17,7 @@ document.querySelectorAll('input[name="theme"]').forEach((radio) => {
     const selectedTheme = event.target.value;
     if (selectedTheme) {
       chrome.storage.sync.set({ theme: selectedTheme });
+      updateBackgroundColor(selectedTheme); // Update background color when theme changes
       chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
         chrome.tabs.sendMessage(tabs[0].id, { action: 'updateTheme', theme: selectedTheme });
       });
@@ -27,15 +29,42 @@ document.getElementById('no-theme').addEventListener('change', (event) => {
   const noThemeEnabled = event.target.checked;
   if (noThemeEnabled) {
     chrome.storage.sync.set({ theme: 'no-theme' });
+    updateBackgroundColor('no-theme'); // Set background for 'no-theme'
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
       chrome.tabs.sendMessage(tabs[0].id, { action: 'updateTheme', theme: 'no-theme' });
     });
   } else {
-    // Ensure at least one theme is selected if 'no-theme' is unchecked
     const selectedTheme = document.querySelector('input[name="theme"]:checked').value || 'dark-theme';
     chrome.storage.sync.set({ theme: selectedTheme });
+    updateBackgroundColor(selectedTheme); // Update background color on fallback
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
       chrome.tabs.sendMessage(tabs[0].id, { action: 'updateTheme', theme: selectedTheme });
     });
   }
 });
+
+// Function to update background color based on theme
+function updateBackgroundColor(theme) {
+  const body = document.body;
+  let secondaryColor = '';
+
+  switch (theme) {
+    case 'dark-theme':
+      secondaryColor = '#b12124'; // Red for dark theme
+      break;
+    case 'osu-theme':
+      secondaryColor = '#FF7300'; // Orange for osu-theme
+      break;
+    case 'midnight-theme':
+      secondaryColor = '#000000'; // Black for midnight-theme
+      break;
+    case 'no-theme':
+      secondaryColor = '#ffffff'; // White for no-theme
+      break;
+    default:
+      secondaryColor = '#b12124'; // Default to dark-theme if none selected
+  }
+
+  // Set the secondary background color in the CSS
+  body.style.setProperty('--c2', secondaryColor);
+}
