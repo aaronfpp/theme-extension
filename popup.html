@@ -4,25 +4,35 @@
   <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-  <div class="theme-selector">
-    <label>
+  <!-- Box for the heading and subheading -->
+  <div class="title-box">
+    <div class="title">Ticket Themer</div>
+    <div class="subtitle">Beta v14.0</div>
+  </div>
+  
+  <!-- Box under the radio buttons -->
+  <div class="theme-selector-box">
+    <div class="theme-selector">
+<label>
   <input type="radio" id="dark-theme" name="theme" value="dark-theme">
-  Dark Theme
+  <span>Dark Theme</span>
 </label>
 <label>
   <input type="radio" id="osu-theme" name="theme" value="osu-theme">
-  OSU Theme
+  <span>OSU Theme</span>
 </label>
 <label>
   <input type="radio" id="midnight-theme" name="theme" value="midnight-theme">
-  Midnight Theme
+  <span>Midnight Theme</span>
 </label>
 <label>
   <input type="radio" id="no-theme" name="theme" value="no-theme">
-  No Theme
+  <span>No Theme</span>
 </label>
 
+    </div>
   </div>
+
   <script src="popup.js"></script>
 </body>
 </html>
