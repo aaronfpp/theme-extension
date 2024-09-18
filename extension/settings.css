@@ -1,0 +1,155 @@
+/* Body settings */
+body {
+  width: 400px;
+  height: auto;
+  max-height: 400px;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  margin: 0 auto; /* Center body horizontally */
+  
+  /* Background settings */
+  --s: 150px;
+  --c1: #a5a5a5;
+  --c2: var(--selectedSecondaryColor, #ffffff); /* Dynamic secondary color */
+  
+  --_g: var(--c1) 6.2%, var(--c2) 6.3% 18.7%, var(--c1) 18.8% 31.2%,
+         var(--c2) 31.3% 43.7%, var(--c1) 43.8% 56.2%, var(--c2) 56.3% 68.7%, #0000 68.8%;
+  background:
+    radial-gradient(var(--s) at 100% 0, var(--_g)),
+    radial-gradient(var(--s) at 0 0, var(--_g)),
+    radial-gradient(var(--s) at 0 100%, var(--_g)),
+    radial-gradient(var(--s) at 100% 100%, var(--_g)) var(--c1);
+  background-size: var(--s) var(--s);
+}
+
+/* Main container for centering content */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Box for title and subtitle */
+.title-box {
+  background-color: #bbbbbb;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%; /* Ensure the box spans the full width of the container */
+}
+
+/* Title and subtitle styling */
+.title {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Box for theme selection */
+.url-selector-box {
+  background-color: #bbbbbb;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: 100%; /* Ensure the box spans the full width of the container */
+}
+
+
+/* Box for example URLs */
+.example-urls-box {
+  background-color: #bbbbbb;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: 100%; /* Ensure the box spans the full width of the container */
+}
+
+.example-urls-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Example URL list */
+#exampleURLList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#exampleURLList li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* Button for copying URL */
+.copy-button {
+  background-color: transparent;
+  color: #7d7d7d;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 16px; /* Make the icon smaller */
+}
+
+.copy-button:hover {
+  color: #555555; /* Darker gray on hover */
+}
+
+.copy-button i {
+  margin-right: 0; /* Remove the extra margin since we don't have text */
+}
+
+#background-input {
+  min-width: 80px; /* Minimum width for the input field */
+  width: calc(100% - 100px); /* Dynamic width calculation based on container size */
+  max-width: 100%; /* Ensure it doesn't exceed the container width */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+#applybutton {
+  cursor: pointer; /* Indicate clickability */
+}
+
+
+
+/* Alert Box Styling */
+.alert-box {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it's on top of other content */
+}
+
+.alert-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.alert-message {
+  font-size: 14px;
+}
+
+.alert-close-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.alert-close-button:hover {
+  color: #ffdddd; /* Slightly lighter color on hover */
+}

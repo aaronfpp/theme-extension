@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="settings.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Ticket Themer</title>
+</head>
+<body>
+  <div class="container">
+    <!-- Box for the heading and body -->
+    <div class="title-box">
+      <div class="title">Extension Settings</div>
+      <div class="subtitle">Custom ticket theme settings - in development</div>
+    </div>
+
+    <div class="url-selector-box">
+      <!-- Background URL settings -->
+      <label for="background-input">Background URL:</label>
+      <input type="text" id="background-input" placeholder="Enter background URL">
+      <button id="pastebutton">Paste</button>
+      <button id="applybutton">Apply</button>
+
+      <p>Current URL:</p>
+      <span id="currentURL">None</span>
+    </div>
+
+    <div class="example-urls-box">
+      <div class="example-urls-title">Example URLs</div>
+      <ul id="exampleURLList">
+        <!-- Example URLs will be added here -->
+      </ul>
+    </div>
+  </div>
+
+
+<!-- Alert Box -->
+<div id="alert-box" class="alert-box" style="display: none;">
+  <div class="alert-content">
+    <span id="alert-message">Copied to clipboard!</span>
+    <button id="alert-close" class="alert-close-button">&times;</button>
+  </div>
+</div>
+
+
+  <script src="settings.js"></script>
+</body>
+</html>
