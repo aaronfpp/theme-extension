@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // Add example URLs to the list
   const exampleURLs = [
     'https://auth.ifsta.org/images/background_e8.jpg',
-    'https://helpdesk.osufpp.org/images/flags.png',
-    'https://helpdesk.osufpp.org/images/captcha/snakeskin.png'
+    'https://osufpp.org/images/flags.png',
+    'https://osufpp.org/images/captcha/snakeskin.png'
   ];
 
   const exampleURLList = document.getElementById('exampleURLList');
