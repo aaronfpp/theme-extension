@@ -58,13 +58,23 @@ function updateBackgroundColor(theme) {
     case 'midnight-theme':
       secondaryColor = '#000000'; // Black for midnight-theme
       break;
+    case 'image-theme':
+      // For image-theme, handle separately
+      secondaryColor = '#ffffff'; // White for image-theme
+      break;
     case 'no-theme':
       secondaryColor = '#ffffff'; // White for no-theme
       break;
     default:
-      secondaryColor = '#b12124'; // Default to dark-theme if none selected
+      secondaryColor = '#ffffff'; // Default to white if none selected
   }
 
   // Set the secondary background color in the CSS
-  body.style.setProperty('--c2', secondaryColor);
+  if (theme !== 'image-theme') {
+    body.style.setProperty('--c2', secondaryColor);
+  }
 }
+
+document.getElementById('settingsButton').addEventListener('click', () => {
+  chrome.tabs.create({ url: 'settings.html' });
+});
