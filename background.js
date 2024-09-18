@@ -17,13 +17,12 @@ chrome.action.onClicked.addListener((tab) => {
 
       // Store the new theme preference in local storage
       chrome.storage.local.set({ theme: nextTheme }, () => {
-        // Execute the script only if a valid tab is found and URL is not restricted
+        // Execute the content script to update the theme
         if (tab.id) {
           chrome.scripting.executeScript({
             target: { tabId: tab.id },
             function: (theme) => {
-              document.body.classList.remove('dark-theme', 'osu-theme', 'midnight-theme');
-              document.body.classList.add(theme);
+              chrome.runtime.sendMessage({ action: 'updateTheme', theme: theme });
             },
             args: [nextTheme]
           });
@@ -48,8 +47,7 @@ chrome.runtime.onInstalled.addListener(() => {
         chrome.scripting.executeScript({
           target: { tabId: tabs[0].id },
           function: (theme) => {
-            document.body.classList.remove('dark-theme', 'osu-theme', 'midnight-theme');
-            document.body.classList.add(theme);
+            chrome.runtime.sendMessage({ action: 'updateTheme', theme: theme });
           },
           args: [theme]
         });
