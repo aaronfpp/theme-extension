@@ -93,7 +93,13 @@ input[value="midnight-theme"]:hover + span {
   color: #fff;
 }
 
+input[value="image-theme"]:hover + span {
+  background-color: #ddd;
+  color: #000;
+}
+
 input[value="no-theme"]:hover + span {
   background-color: #ddd;
   color: #000;
 }
+
