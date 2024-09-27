@@ -78,6 +78,7 @@ chrome.storage.sync.get(['theme', 'backgroundURL'], (result) => {
       const backgroundURL = result.backgroundURL || '';
       if (backgroundURL) {
         document.body.style.backgroundImage = `url(${backgroundURL})`;
+        document.body.style.backgroundSize = 'auto'; // Adjust background size as needed
 
         // Create and apply the image-theme CSS file
         const imageThemeLink = document.createElement('link');
